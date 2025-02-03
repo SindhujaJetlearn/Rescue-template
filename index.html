@@ -18,20 +18,24 @@
       <a-entity id="look" kinematic-body look-controls wasd-controls="acceleration: 200" camera position="-10 -18 -20"
         rotation="-6 -0.5 0">
         <a-entity position="-5 -5 -12">
+
           <a-entity position="-0.6 0.13 0"
             text="font: aileronsemibold; width: 12; color: white; value: TURTLES\nRESCUED"></a-entity>
+
           <a-entity id="turtlesRemainingText" position="-8 0.3 0"
             text="font: exo2bold; align: center; width: 30; color: white; value: 5"></a-entity>
+
           <a-entity id="gameOverText" position="15 0.3 0" text="font: exo2bold; align: center; width: 30; color: white;">
+
           </a-entity>
         </a-entity>
       </a-entity>
 
       <a-assets>
         <img id="space" src="assets/space.jpeg">
-        <a-asset-item id="environment" src="assets/islands/scene.gltf"></a-asset-item>
-        <a-asset-item id="rs" src="assets/researcher/scene.gltf"></a-asset-item>
-        <a-asset-item id="turtle" src="assets/cartoon_turtle/scene.gltf"></a-asset-item>
+       
+        <!--Load the assets-->
+        
       </a-assets>
 
       <a-sky src="#space" rotation="-180 10 0"></a-sky>
@@ -47,21 +51,8 @@
         scale="3 3 3" animation-mixer="clip: Animation">
       </a-entity>
 
-      <a-entity id="turtle2" gltf-model="#turtle" game-play static-body="shape: sphere; sphereRadius: 13" position="-25 -19 16"
-        scale="3 3 3" animation-mixer="clip: Animation">
-      </a-entity>
-
-      <a-entity id="turtle3" gltf-model="#turtle" game-play static-body="shape: sphere; sphereRadius: 13"
-        position="27 -24 10" scale="3 3 3" animation-mixer="clip: Animation">
-      </a-entity>
-
-      <a-entity id="turtle4" gltf-model="#turtle" game-play static-body="shape: sphere; sphereRadius: 13" position="35 -23 -35"
-        scale="3 3 3" animation-mixer="clip: Animation">
-      </a-entity>
-
-      <a-entity id="turtle5" gltf-model="#turtle" game-play static-body="shape: sphere; sphereRadius: 15" position="-35 -23 -35"
-        scale="3 3 3" animation-mixer="clip: Animation">
-      </a-entity>
+    <!--Create turtles-->
+    
 
     </a-scene>
   </body>
